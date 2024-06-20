@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="portfoliostyle3.css" rel="stylesheet">
+    <title>Architecture</title>
+  </head>
+  <body>
+    <header>
+      <h3>Architecture Portfolio</h3>
+    </header>
+    <div class="navbar">
+      <button class="menu">Menu</button>
+      <ul class="links">
+        <li><a href="project1home.html">Home</a></li>
+        <li><a href="project2about.html">About</a></li>
+        <li><a href="project3projects.html">Projects</a></li>
+        <li><a href="project4contact.html">Contact</a></li>
+        <li><a href="project5blog.html">Blog</a></li>        
+      </ul>
+      <div class="dropdown">
+        <li><a href="project1home.html">Home</a></li>
+        <li><a href="project2about.html">About</a></li>
+        <li><a href="project3projects.html">Projects</a></li>
+        <li><a href="project4contact.html">Contact</a></li>
+        <li><a href="project5blog.html">Blog</a></li> 
+      </div>
+    </div>
+    <div class="projectcontent">
+      <input type="text" id="search" onkeyup="myfunction()" placeholder="Search For Projects"><button id="mybtn" onclick="sortByDate()">Sort by date</button>
+      <h3 id="error"></h3>
+      <table id="projectstable">
+        <thead>
+          <tr class="tableheader">
+          <th onclick="sortTable(0)">Name</th>
+          <th onclick="sortByDate()">Date</th>
+          <th onclick="sortTable(2)">Technology</th>
+          <th>Description</th>
+          <th>Image</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td data-label="Name">Residential Tower</td>
+          <td class="date" data-label="Date">23/6/2023</td>
+          <td data-label="Technology">Archicad</td>
+          <td data-label="Description">A 30 storey tower inspired from triangular shapes</td>
+          <td>
+            <img data-label="Image" src="tower.jpg" alt="triangular tower" height="100px">
+          </td>
+        </tr>
+        <tr>
+          <td data-label="Name">Gothic Villa</td>
+          <td class="date" data-label="Date">4/8/2022</td>
+          <td data-label="Technology">3ds max</td>
+          <td data-label="Description">A palace-like villa of 6 bedrooms and an indoor swimming pool</td>
+          <td>
+            <img data-label="Image" src="villa.jpg" alt="gothic villa" height="100px">
+          </td>
+        </tr>
+        <tr>
+          <td data-label="Name">Graduation Project</td>
+          <td class="date" data-label="Date">13/2/2020</td>
+          <td data-label="Technology">Vray</td>
+          <td data-label="Description">A 4 star hotel project in Qudsayya suburb</td>
+          <td>
+            <img data-label="Image" src="hotel.jpg" alt="graduation project" height="100px" >
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="portfolio.js"></script>
+</html>
