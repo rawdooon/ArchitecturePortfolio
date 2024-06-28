@@ -160,3 +160,9 @@ function sortByDate() {
 }
   
 document.getElementById("mybtn").addEventListener("click", sortByDate());
+
+// form submission
+let form = document.getElementById("myform");
+
+form.onsubmit = function myfunction(){myscript};
+form.addEventListener("submit", myscript);

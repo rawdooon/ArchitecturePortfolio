@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: -1;
 }
 
 #search{
@@ -26,6 +27,7 @@
     width: 75%;
     border: 1px solid white;
     font-size: 18px;
+    z-index: -1;
 }
 
 #projectstable th, #projectstable td{

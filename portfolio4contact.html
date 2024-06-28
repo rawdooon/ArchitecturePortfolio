@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="portfoliostyle4.css" rel="stylesheet">
+    <title>Architecture</title>
+  </head>
+  <body>
+    <header>
+      <h3>Architecture Portfolio</h3>
+    </header>
+    <div class="navbar">
+      <button class="menu">Menu</button>
+      <ul class="links">
+        <li><a href="portfolio1home.html">Home</a></li>
+        <li><a href="portfolio2about.html">About</a></li>
+        <li><a href="portfolio3projects.html">Projects</a></li>
+        <li><a href="portfolio4contact.html">Contact</a></li>
+        <li><a href="portfolio5blog.html">Blog</a></li>        
+      </ul>
+      <div class="dropdown">
+        <li><a href="portfolio1home.html">Home</a></li>
+        <li><a href="portfolio2about.html">About</a></li>
+        <li><a href="portfolio3projects.html">Projects</a></li>
+        <li><a href="portfolio4contact.html">Contact</a></li>
+        <li><a href="portfolio5blog.html">Blog</a></li> 
+      </div>
+    </div>
+    <form onsubmit="myscript()" id="myform" action="https://formspree.io/f/xpwaaopk" method="POST">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="First Name" required>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="Last Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="user@gmail.com" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Subject" required>
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Write a message" required></textarea>
+
+        <input id="submit" type="submit">
+    </form>
+  </body>
+  <script src="portfolio.js"></script>
+</html>
