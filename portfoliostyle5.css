@@ -1,0 +1,66 @@
+@import url("portfoliostyle1.css");
+
+#excerpts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(1.5px);
+    width: 60%;
+    border-radius: 25px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#body{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(1.5px);
+    width: 60%;
+    border-radius: 25px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#currentpage{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-size: 0.6rem;
+    padding: 5px;
+    margin: 1px;
+}
+
+#prev{
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+
+#next{
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+

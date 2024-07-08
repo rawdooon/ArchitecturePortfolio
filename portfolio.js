@@ -166,3 +166,19 @@ let form = document.getElementById("myform");
 
 form.onsubmit = function myfunction(){myscript};
 form.addEventListener("submit", myscript);
+
+// fetch json object for blog page
+//async function fetchdata(){
+//  try{
+//    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//   if(!response.ok){
+//      throw new Error("could not fetch resource");
+//    }
+//    const data = await response.json();
+//    console.log(data)
+//  }
+//  catch(error){
+//    console.error(error);
+//  }
+//}
+//fetchdata();
