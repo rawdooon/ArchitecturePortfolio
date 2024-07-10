@@ -66,9 +66,8 @@
 //}
 
 const jsonposts = document.getElementById("excerpts");
+const postpage = document.getElementById("postpage");
 let pages = document.getElementById("pages");
-
-
 
 //const current = 0;
 //let n = 10;
@@ -88,7 +87,10 @@ async function getData() {
       json[item].forEach(post => {
         jsonposts.innerHTML += `
           <h3 id="title">${post.title}</h3> 
-          <p id="body">${post.body}</p>
+          <p id="body">${post.body.slice(0, 50) + "..."}</p>
+          <a href="post.html">
+            <button onclick="showpost(${post.id})" id="readmore">Read more</button>
+          </a>
         `;
         
       });
@@ -138,3 +140,36 @@ function showdata(page){
 
 }
 showdata(1);
+
+async function getpost() {
+  postpage.innerHTML = "";
+  try {
+    const response = await fetch(`https://dummyjson.com/posts?limit=${limit}&skip=${start}&select=title,body`);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    const json = await response.json();
+    console.log(json);
+    for(const item in json){
+      json[item].forEach(post => {
+        postpage.innerHTML += `
+          <h3 id="title">${post.title}</h3> 
+          <p id="body">${post.body}</p>  
+        `;
+        console.log(postpage.innerHTML);
+      });
+    }
+  } catch (error) {
+    console.error(error.message);
+ }
+}
+
+function showpost(post){
+  postpage.innerHTML = "";
+  limit = 1;
+  start = post - 1;
+  getpost();
+}
+
+
+  
